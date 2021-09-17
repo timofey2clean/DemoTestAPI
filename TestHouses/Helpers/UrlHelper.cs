@@ -11,7 +11,7 @@ namespace TestHouses.Helpers
         // Method returns url with filters added from given string array
         public static string CreateFilterUrl(string baseUrl, string[] filterArray)
         {
-            // If filter array is empty, return empty string
+            // If filter array is empty, return base url
             if (!filterArray.Any())
             {
                 return baseUrl;
