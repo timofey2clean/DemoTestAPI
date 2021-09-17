@@ -18,7 +18,7 @@ namespace TestHouses
             Assert.IsNotNull(allHouses);
             Assert.IsTrue(allHouses.Any(), "Received empty house array.");
 
-            string filterUrl = Helpers.ApiRequester.CreateFilterUrl(
+            string filterUrl = Helpers.UrlHelper.CreateFilterUrl(
                 BaseUrl, new[] { string.Format("region={0}", region), string.Format("haswords={0}", haswords.ToString().ToLower())});
 
             // Get houses using filters
