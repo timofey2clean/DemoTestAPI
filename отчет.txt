@@ -1,0 +1,15 @@
+Name:	TestRegionAndHaswordsFilter (Dorne,True)
+Outcome:	Failed
+Duration:	0:00:01.5968744
+StackTrace:	at TestHouses.HousesApiTest.TestRegionAndHaswordsFilter(String region, Boolean haswords) in C:\Users\timofey.tuklin\source\repos\TestHouses\TestHouses\HousesApiTest.cs:line 34
+Message:	Assert.IsTrue failed. Initial collection of houses contains less houses with parameters given in the filter.
+StandardOutput:
+StandardError:
+
+Name:	TestInvalidUrl (http://notexistingurl.notexistingdomain.notexistingzone)
+Outcome:	Passed
+Duration:	0:00:00.1037658
+StackTrace:
+Message:
+StandardOutput:
+StandardError:
