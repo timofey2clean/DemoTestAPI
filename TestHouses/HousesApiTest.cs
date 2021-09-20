@@ -9,7 +9,7 @@ namespace TestHouses
         const string BaseUrl = "https://www.anapioficeandfire.com/api/houses";
 
         [TestCategory("FilterTest")]
-        [DataRow("Dorne" , false)]
+        [DataRow("Dorne" , true)]
         [DataTestMethod]
         public void TestRegionAndHaswordsFilter(string region, bool haswords)
         {
