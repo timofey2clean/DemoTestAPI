@@ -33,7 +33,7 @@ namespace TestHouses
         }
 
         [TestCategory("NegativeTest")]
-        [DataRow("http://notexistingurl.notexistingdomain.notexistingzone")]
+        [DataRow("http://notexistingurl.notexistingurl.notexistingurl")]
         [ExpectedException(typeof(System.Net.WebException), "Test method should throw System.Net.WebException.")]
         [DataTestMethod]
         public void TestInvalidUrl(string url)
