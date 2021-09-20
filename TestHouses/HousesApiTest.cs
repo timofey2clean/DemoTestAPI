@@ -23,7 +23,7 @@ namespace TestHouses
             ApiObjects.House[] filteredHouses = Helpers.ApiRequester.GetJsonObject<ApiObjects.House[]>(filterUrl);
             Assert.IsNotNull(filteredHouses);
 
-            // Check all filtered houses have expected region=Dorne и haswords=true
+            // Check all filtered houses have expected region and haswords
             Assert.IsTrue(filteredHouses.All(_ => string.Equals(_.region, region)), "Some houses received using filter have unexpected region.");
             Assert.IsTrue(filteredHouses.All(_ => haswords == !string.IsNullOrWhiteSpace(_.words)), "Some houses received using filter have unexpected words property.");
 
