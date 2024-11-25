@@ -44,11 +44,11 @@ namespace TestHouses
                 && haswords == !string.IsNullOrWhiteSpace(_.words))
                 .Count()
                 .Should().Be(filteredHouses.Count(),
-                "Initial collection of houses contains less houses with parameters given in the filter.");
+                "Initial collection of houses contains different number of houses than received using the filter.");
         }
 
         [Test]
-        [Description("NegativeTest - URL does not exist")]
+        [Description("Negative test - URL does not exist")]
         public void TestInvalidUrl()
         {
             const string NotExistingUrl = "http://notexistingurl.notexistingurl.notexistingurl";
