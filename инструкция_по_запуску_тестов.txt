@@ -1,1 +1,1 @@
-Используя MS Visual Studio или MSTest выполнить test case-ы "TestRegionAndHaswordsFilter"(TestCategory "FilterTest") и "TestInvalidUrl"(TestCategory "NegativeTest").
+
